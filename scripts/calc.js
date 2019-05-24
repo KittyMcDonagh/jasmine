@@ -29,3 +29,27 @@ function whatCanIDrink(age) {
     }
 
 };
+
+function fizzBuzz(num) {
+    if (isNaN(num)) {
+        return "Invalid Input!";
+    }
+    
+    if (num % 3 != 0 && num % 5 != 0) {
+        return (num+" not divisible by 3 or 5!");
+    }
+    
+    if (num % 3 === 0 && num % 5 === 0) {
+        return "FizzBuzz";
+    }
+
+    if (num % 3 === 0) {
+        return "Fizz";
+    }
+
+    if (num % 5 === 0) {
+        return "Buzz";
+    }
+    
+    
+};

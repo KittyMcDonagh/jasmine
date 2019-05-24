@@ -45,3 +45,67 @@ describe("Drink About Game", function() {
         });
     });
 });
+
+describe("Fizz Buzz Game", function() {
+    describe("Fizz Buzz", function() {
+        it("abc should return Invalid Input!", function() {
+            expect(fizzBuzz("abc")).toBe("Invalid Input!");
+        });
+        it("22 should return 22 not divisible by 3 or 5!", function() {
+            expect(fizzBuzz(22)).toBe("22 not divisible by 3 or 5!");
+        });
+        it("124 should return 124 not divisible by 3 or 5!", function() {
+            expect(fizzBuzz(124)).toBe("124 not divisible by 3 or 5!");
+        });
+        it("3 should return Fizz", function() {
+            expect(fizzBuzz(3)).toBe("Fizz");
+        });
+        it("6 should return Fizz", function() {
+            expect(fizzBuzz(6)).toBe("Fizz");
+        });
+        it("12 should return Fizz", function() {
+            expect(fizzBuzz(12)).toBe("Fizz");
+        });
+        it("-3 should return Fizz", function() {
+            expect(fizzBuzz(-3)).toBe("Fizz");
+        });
+        
+        it("5 should return Buzz", function() {
+            expect(fizzBuzz(5)).toBe("Buzz");
+        });
+        it("10 should return Buzz", function() {
+            expect(fizzBuzz(10)).toBe("Buzz");
+        });
+        it("20 should return Buzz", function() {
+            expect(fizzBuzz(20)).toBe("Buzz");
+        });
+        it("-5 should return Buzz", function() {
+            expect(fizzBuzz(-5)).toBe("Buzz");
+        });
+        
+        it("15 should return FizzBuzz", function() {
+            expect(fizzBuzz(15)).toBe("FizzBuzz");
+        });
+        it("30 should return FizzBuzz", function() {
+            expect(fizzBuzz(30)).toBe("FizzBuzz");
+        });
+        it("45 should return FizzBuzz", function() {
+            expect(fizzBuzz(45)).toBe("FizzBuzz");
+        });
+        it("-15 should return FizzBuzz", function() {
+            expect(fizzBuzz(-15)).toBe("FizzBuzz");
+        });
+    });
+});
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
